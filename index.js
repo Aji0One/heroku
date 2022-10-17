@@ -43,7 +43,9 @@ app.use("/employees",employeeRouter);
 //     }])
 // }) 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//     console.log(`Our app is running on port ${ PORT }`);
+// });
+
+app.listen(process.env.PORT)
